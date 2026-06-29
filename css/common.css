@@ -1,0 +1,26 @@
+/* CSS 변수 선언: 주색상, 배경색 등을 지정해두면 바꾸기 편합니다
+(main.css에서 import를 한공간에서 했으니, 다른 import된 파일 안에서도 변수를 사용할 수 있음.) */
+
+/* :root{} 라는 말은, 가장 바깥쪽 태그(html태그)안에서 사용할 변수를 선언하는 공간 */
+
+:root { /*css변수는, 이름 앞에 반드시 대시 두개(--)를 붙여야 함. 사용방법은 아래 var()에 쓴것처럼.*/
+    --bg-color: #1b1b1b;     /* 이치닷아이오풍 어두운 배경 */
+    --text-color: #ffffff;   /* 흰색 글씨 */
+    --point-color: #ff2449;  /* 포인트 핑크/레드 */
+    --card-bg: #2b2b2b;      /* 게임 카드 배경색 */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 상단 네비게이션 바 공통 스타일 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #141414;
+}

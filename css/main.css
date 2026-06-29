@@ -1,0 +1,10 @@
+/* 1. 기본 초기화 및 변수 (가장 먼저 적용되어야 함) */
+@import url("./reset.css");
+
+/* 2. 모든 페이지에 공통으로 들어가는 스타일 (레이아웃, 헤더, 푸터) */
+@import url("./common.css");
+
+/* 3. 각 페이지별 전용 스타일 */
+@import url("./index.css");
+@import url("./detail.css");
+@import url("./login.css");
